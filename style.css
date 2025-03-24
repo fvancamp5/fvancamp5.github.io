@@ -1,0 +1,243 @@
+body {
+    font-family: Poppins, serif;
+    background-color: #EFEFEF;
+}
+
+.logoDiv {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.navbar {
+    background-color: black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li:not(:last-child)::after {
+    content: "|";
+    color: white;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navSelectedText {
+    color: #F56A2A;
+    margin-left: 10px;
+}
+
+.navSpan{
+    color: white;
+}
+
+.mainH1 {
+    text-align: center;
+    font-size: 2rem ;
+}
+
+#tabligne1 {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.tabStyle {
+    margin-top: 100px;
+}
+
+.footerStyle {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+td, tr, th {
+    padding: 10px;
+}
+
+.footerStyle h3 {
+    font-size: .7rem;
+}
+
+.tabStyle tr:nth-child(odd) {
+    background-color: #EFEFEF;
+}
+
+.listCategories li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.listCategories a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.listCategories {
+    padding: 0;
+}
+
+.footerStyle {
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    max-width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 ;
+    padding-left: 30px;
+}
+
+.sousTitre {
+    font-size: 1rem;
+}
+
+.mainH3 {
+    font-size: .7rem;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins ExtraLight", serif;
+}
+
+.jobH2 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.jobH2 {
+    font-family: "Poppins", serif;
+}
+
+.mainH2 {
+    font-size: 1.3rem;
+    font-family: "Poppins", serif;
+}
+
+label{
+    font-family: "Poppins SemiBold", serif;
+    font-size: 1rem;
+    color: #F56A2A;
+}
+
+
+
+.majeurP {
+    font-size: 1rem;
+    color: #F56A2A;
+    font-family: "Poppins SemiBold", serif;
+}
+
+.stylelessLabel {
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.cvP {
+    font-family: "Poppins", serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .7rem;
+
+}
+
+input,select,textarea, button , a.button {
+    font-size: .7rem;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #EFEFEF;
+
+}
+
+.labelDiv {
+    margin-top: 15px;
+}
+
+h4{
+    font-family: "Poppins", serif;
+    font-size: .5rem;
+    color: darkgrey;
+}
+
+.error{
+    outline: 1px solid red;
+}
+
+.errorAge{
+    color: red;
+    opacity: 0.62;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border: #F56A2A 3px solid;
+    border-collapse: collapse;
+
+}
+th {
+    background-color: #F56A2A;
+    text-align: center;
+    color: #fbead9;
+    font-weight: bold;
+}
+
+td {
+    text-align: left;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.pagination{
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.pagination a.button {
+    margin : 0 5px;
+}
