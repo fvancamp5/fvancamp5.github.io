@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://web4all.me/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+<header id="logoHeader">
+    <div class="logoDiv">
+        <img src="Views/assets/logo.png" alt="logo">
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" id="navSelectedText">Accueil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Inscription</a></li>
+            <li><a href="#">Connexion</a></li>
+            <li><a href="#">Avis</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="search.php">Entreprises</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="logoDiv">
+        <h1 class="mainH1">Postuler à une offre de stage</h1>
+    </div>
+    <h2 class="sousTitre">
+        Vous pouvez ici répondre directement à l’offre de stage qui a été déposée par l’entreprise, soyez le plus précis possible dans vos réponses !
+    </h2>
+
+    <div class="mainDiv">
+        <h2 class="jobH2">Stage - Administrateur Système et Réseau H/F</h2>
+        <h3 class="mainH3">
+            IBM | Pornichez - 44 | Publiée le 23/01/2025 | Ref. 123XYZ-44
+        </h3>
+        <h2 class="mainH2">Résumé de l’offre</h2>
+        <ul class="listCategories">
+            <li> <a href="#">3 mois</a></li>
+            <li> <a href="#">Bac +2, Bac +3</a></li>
+            <li> <a href="#">Systèmes, Réseaux, Cloud</a></li>
+            <li> <a href="#">Exp. - 1 an</a></li>
+        </ul>
+    </div>
+    <h2 class="jobH2">Envoyez votre candidature dès maintenant !</h2>
+    <form id="myForm" action="Models/upload.php" method="post" enctype="multipart/form-data" >
+        <div class="labelDiv">
+            <label for="gender">CIVILITE</label> <br>
+            <select name="gender" id="gender">
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+                <option value="jeveuxpas">Je ne souhaite pas répondre</option>
+            </select>
+        </div>
+        <div class="labelDiv">
+            <label for="fname">NOM</label> <br>
+            <input type="text" id="fname" name="firstname" placeholder="Votre nom">
+        </div>
+        <div class="labelDiv">
+            <label for="lname">PRENOM</label> <br>
+            <input type="text" id="lname" name="lastname" placeholder="Votre prénom">
+        </div>
+        <div class="labelDiv">
+            <label for="email">COURRIEL</label> <br>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+        </div>
+        <div class="labelDiv">
+            <p class="majeurP">A PROPOS DE VOUS</p>
+            <input type="checkbox" id="permis" name="permis" value="permis">
+            <label for="permis" class="stylelessLabel">Permis B</label><br>
+            <input type="checkbox" id="vehicule" name="vehicule" value="vehicule">
+            <label for="vehicule" class="stylelessLabel">Véhiculé</label><br>
+            <input type="checkbox" id="certif" name="certif" value="certif">
+            <label for="certif" class="stylelessLabel">Certification(s) (Microsoft, Cisco...)</label>
+        </div>
+        <div class="labelDiv">
+            <p class="majeurP">JE SUIS MAJEUR</p>
+            <p id="majority" class="errorAge"></p>
+            <input type="radio" id="oui" name="isMajeur" value="yes">
+            <label for="oui" class="stylelessLabel">Oui</label><br>
+            <input type="radio" id="non" name="isMajeur" value="no">
+            <label for="non" class="stylelessLabel">Non</label>
+        </div>
+        <div class="labelDiv">
+            <label for="message">VOTRE MESSAGE AU RECRUTEUR</label> <br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+        <div class="labelDiv">
+            <label for="file">CV</label> <br>
+            <input type="file" id="file" name="file" placeholder="Votre CV" accept=".pdf" required/>
+            <p id="weigh" class="cvP"></p>
+            <p class="cvP">Poid max. 2Mo</p>
+            <p class="cvP">Formats pdf</p>
+        </div>
+        <div class="labelDiv">
+            <button type="submit" value="submit" class="button">Televerser</button>
+            <button type="reset" value="Réinitialiser">Réinitialiser</button>
+            <h4>En cliquant sur “Postuler”, vous acceptez les CGU et déclarez avoir pris connaissance de la politique de protection des données de notre site.</h4>
+        </div>
+    </form>
+</main>
+<footer class="footerStyle">
+    <h3>2024 - Tous droits réservés</h3>
+</footer>
+
+<script src="Controllers/valid.js"></script>
+</body>
+</html>
