@@ -1,0 +1,51 @@
+{% extends "base.html.twig" %}
+
+{% block banner %}
+    <section class="banner">
+        <div class="banner-overlay">
+            <h1>{{ site_name }}</h1>
+            <p>Plateforme de Tutorat et d'Accompagnement Scolaire</p>
+        </div>
+    </section>
+{% endblock %}
+
+{% block content %}
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Connectez-vous à votre espace</h2>
+            <p class="subtitle">Choisissez votre profil pour accéder à votre compte</p>
+
+            <div class="cards">
+                <div class="card student">
+                    <div class="card-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Étudiant</h3>
+                    <a href="?page=connexion-etu" class="btn-login">
+                        Se connecter
+                    </a>
+                </div>
+
+                <div class="card tutor">
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Tuteur</h3>
+                    <a href="?page=connexion-pil" class="btn-login">
+                        Se connecter
+                    </a>
+                </div>
+
+                <div class="card admin">
+                    <div class="card-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Administrateur</h3>
+                    <a href="?page=connexion-adm" class="btn-login">
+                        Se connecter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

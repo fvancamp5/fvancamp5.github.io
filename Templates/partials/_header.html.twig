@@ -1,0 +1,47 @@
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="{{ base_url }}?page=accueil">
+                <img src="{{ asset('logo.png') }}" alt="Web4ALL Logo">
+            </a>
+        </div>
+
+        <div class="services-dropdown">
+            <button class="hamburger-menu">
+                <span class="hamburger-icon"></span>
+                Services
+            </button>
+            <div class="dropdown-content">
+                <a href="{{ base_url }}?page=accueil"><i class="fas fa-home"></i> Accueil</a>
+                <a href="{{ base_url }}?page=a-propos"><i class="fas fa-info-circle"></i> À propos de nous</a>
+                <a href="{{ base_url }}?page=avis"><i class="fas fa-star"></i> Avis</a>
+                <a href="{{ base_url }}?page=recherche"><i class="fas fa-search"></i> Recherche</a>
+                <a href="{{ base_url }}?page=espace-tuteur"><i class="fas fa-chalkboard-teacher"></i> Espace Tuteur</a>
+            </div>
+        </div>
+        <h1>P.A.I.J</h1>
+        <div class="right-menu">
+            {% if user %}
+                <a href="{{ base_url }}?page=infos-compte" class="nav-button">
+                    <i class="fas fa-user-circle"></i> Mon compte
+                </a>
+                <a href="{{ base_url }}?logout=1" class="nav-button">
+                    <i class="fas fa-sign-out-alt"></i> Déconnexion
+                </a>
+            {% else %}
+                <a href="{{ base_url }}?page=connexion-etu" class="nav-button {{ current_page == 'connexion-etu' ? 'active' : '' }}">
+                    <i class="fas fa-sign-in-alt"></i> Connexion
+                </a>
+            {% endif %}
+        </div>
+    </nav>
+
+    {% if current_page == 'accueil' %}
+        <section class="banner">
+            <div class="banner-overlay">
+                <h1>P.A.I.J</h1>
+                <p>Plateforme de Tutorat et d'Accompagnement Scolaire</p>
+            </div>
+        </section>
+    {% endif %}
+</header>

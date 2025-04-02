@@ -1,0 +1,50 @@
+{
+  "etudiants": [
+    {
+      "id": 1,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "email": "etudiant@mail.com",
+      "password": "pass123",
+      "age": 22,
+      "formation": "Informatique",
+      "dob": "2001-01-01"
+    },
+    {
+      "id": 2,
+      "nom": "Martin",
+      "prenom": "Marie",
+      "email": "marie.martin@cool.com",
+      "password": "martinecool",
+      "age": 48,
+      "formation": "Secrétariat"
+    },
+    {
+      "id": 3,
+      "nom": "Taveirne",
+      "prenom": "Simon",
+      "email": "simon.taveirne@proton.me",
+      "password": "DieuUltime",
+      "age": 19,
+      "formation": "Ingénieurie"
+    }
+
+  ],
+
+  "tuteurs": [
+    {
+      "id": 1,
+      "nom": "Djadane",
+      "prenom": "Mohamed",
+      "email": "mdjadane@cesi.fr",
+      "password": "momo"
+    },
+    {
+      "id": 2,
+      "nom": "Tuteur",
+      "prenom": "Test",
+      "email" : "tuteur@mail.com",
+      "password": "tutortest"
+    }
+  ]
+}
